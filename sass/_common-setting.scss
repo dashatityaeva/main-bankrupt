@@ -5,6 +5,7 @@
     src: url('../fonts/GothamPro.woff') format('woff');
 }
 
+$main-color-text: #ffffff;
 
 *,
 *::before,
@@ -38,9 +39,10 @@ li {
 // }
 .container {
     width: 100%;
-    max-width: 1110px;
+    height: 100%;
+    max-width: 1170px;
     margin: 0 auto;
-    border: 1px solid red;
+    padding: 0 30px;
 }
 p, h1, h2, h3, h4, ul {
     margin: 0;
