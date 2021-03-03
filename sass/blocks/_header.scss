@@ -28,9 +28,19 @@
     &__phone {
         font-weight: bold;
         font-size: 20px;
+        color: #131313;
 
         &_stress {
             color: #FF0100
+        }
+        &_visible {
+            display: none;
+           
+            
+          
+           margin-top: 100px;
+            margin-left: 30px;
+
         }
     }
 
@@ -77,7 +87,7 @@ $color-burger: #ffffff;
 .menu__btn {
     display: none;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 22px;
     right: 15px;
     width: 30px;
@@ -154,6 +164,9 @@ $color-burger: #ffffff;
 .menu__item {
     transition-duration: .3s;
 }
+.visible {
+    display: none;
+}
 
 
 @media (max-width: 768px) {
@@ -163,13 +176,13 @@ $color-burger: #ffffff;
         }
 
         &__logo-mb {
-            display: block;
-            padding: 14px 0 17px 15px;
+            display: inline-block;
+            padding: 14px 0 17px 30px;
             position: relative;
             z-index: 1;
             background-color: #333;
-            margin-left: -30px;
             margin-right: -30px;
+            max-height: 60px;
         }
 
         &__order {
@@ -180,6 +193,9 @@ $color-burger: #ffffff;
             position: relative;
             z-index: -1;
             padding-left: 33px;
+            &_visible {
+                display: block;
+            }
 
             &:before {
                 content: '';
@@ -199,6 +215,9 @@ $color-burger: #ffffff;
             min-height: 60px;
         }
     }
+    .visible {
+        display: block;
+    }
 
     #menu {
         &__toggle {
@@ -210,7 +229,18 @@ $color-burger: #ffffff;
     .menu__btn {
         display: flex;
     }
-
+    .hamburger-menu {
+        height: 100%;
+        background-color: #333333;
+        z-index: 33;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 60px;
+        width: 100%;
+       
+    
+    }
     .menu__box {
         display: block;
         position: fixed;
@@ -221,7 +251,9 @@ $color-burger: #ffffff;
         width: 100%;
         height: 100%;
         margin: 0;
-        padding: 80px 0;
+        margin-top: 60px;
+        z-index: 33;
+        padding: 50px 0px ;
         list-style: none;
         background-color: #ffffff;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
@@ -251,5 +283,15 @@ $color-burger: #ffffff;
 
     .menu__item:hover {
         background-color: #45acd8;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        box-shadow: none;
+
+        &__wrap {
+            margin: 0 -15px;
+        }
     }
 }

@@ -67,7 +67,11 @@
     }
 
     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 30px 25px 25px 25px;
+        width: 100%;
     }
 
     &__heading {
@@ -75,8 +79,21 @@
         line-height: 1.5;
         color: #131313;
         overflow: hidden;
-        text-overflow: ellipsis;
+        position: relative;
+        //text-overflow: ellipsis;
         padding-bottom: 37px;
+        height: 140px;
+        margin-bottom: 10px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(180deg, transparent, #ffffff 100%);
+        }
     }
 
     &__content-wrap {
@@ -176,6 +193,68 @@
         &:hover {
             border: solid #FF0100;
             border-width: 0 3px 3px 0;
+        }
+    }
+}
+
+@media (max-width: 1144px) {
+    .advice {
+        &__group {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .pagination {
+        &__info {
+            display: none;
+        }
+
+        &__block {
+            justify-content: center;
+        }
+    }
+
+}
+
+@media (max-width: 425px) {
+    .advice {
+        &__wrap {
+            padding-top: 42px;
+            padding-bottom: 61px;
+        }
+
+        &__group {
+            margin: 67px 0px 50px;
+        }
+
+        &__item {
+            margin: 10px 0;
+        }
+
+        &__content {
+            padding: 25px;
+        }
+
+        &__title {
+            padding: 40px 0;
+            font-size: 22px;
+            line-height: 1.36;
+        }
+
+        &__description {
+            font-size: 14px;
+            line-height: 1.71;
+            padding-left: 19px;
+
+            &::before {
+                height: 110%;
+            }
+        }
+
+        &__heading {
+            font-size: 18px;
         }
     }
 }

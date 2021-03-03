@@ -17,6 +17,7 @@
 
     &__inner {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 64px;
     }
@@ -130,7 +131,7 @@
 
     &__polity {
         display: flex;
-
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding: 27px 0;
@@ -139,6 +140,8 @@
     &__privacy {
         display: flex;
         flex-direction: column;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     &__privacy-link {
@@ -174,6 +177,10 @@
         display: flex;
         width: 130px;
         margin-right: 14px;
+    }
+
+    &__nav-mb {
+        display: none;
     }
 }
 
@@ -211,5 +218,88 @@
 
     50% {
         bottom: 169px;
+    }
+}
+
+@media (max-width: 1144px) {
+    .footer {
+
+        &__data,
+        &__nav {
+            width: 100%;
+        }
+
+        &__data {
+            margin-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__nav-group {
+            width: 50%;
+        }
+
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        &__nav-mb {
+            display: block;
+            margin-bottom: 60px;
+        }
+
+        &__nav-group {
+            display: none;
+        }
+
+        &__nav-item:not(:last-child) {
+            margin-bottom: 29px;
+        }
+
+        &__nav-title {
+            display: none;
+        }
+
+        &__nav-link {
+            font-size: 17px;
+            line-height: 1.06;
+        }
+
+        &__phone-text,
+        &__requisites-text {
+            font-size: 16px;
+            line-height: 1.37;
+        }
+
+        &__phone,
+        &__requisites-group {
+            font-size: 14px;
+            line-height: 1.57;
+        }
+
+        &__developer {
+            display: none;
+        }
+
+        &__polity {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__privacy-text,
+        &__privacy-link {
+            font-family: 'Gotham Pro', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1.57;
+            color: #FFFFFF;
+        }
+    }
+    .up {
+        display: none;
     }
 }
