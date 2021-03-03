@@ -698,7 +698,6 @@ p, h1, h2, h3, h4, ul {
 }
 
 .advice__group {
-  margin-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,6 +706,7 @@ p, h1, h2, h3, h4, ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 120px -10px 60px;
 }
 
 .advice__item {
@@ -782,5 +782,85 @@ p, h1, h2, h3, h4, ul {
   left: 0;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
+}
+
+.pagination__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination__info {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #8D8D8D;
+}
+
+.pagination__page {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #C1C1C1;
+  border-radius: 100%;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #C1C1C1;
+  width: 50px;
+  height: 50px;
+  margin: 0 -6px;
+  cursor: pointer;
+}
+
+.pagination__page:not(:nth-last-child(-n+2)) {
+  margin-right: 8px;
+}
+
+.pagination__page_active {
+  color: #FF0100;
+  border: 1px solid #FF0100;
+}
+
+.pagination__page:hover {
+  color: #FF0100;
+  border: 1px solid #FF0100;
+}
+
+.pagination__arrow {
+  border: solid #828282;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  margin: 0 20px;
+}
+
+.pagination__arrow_prev {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.pagination__arrow_next {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.pagination__arrow:hover {
+  border: solid #FF0100;
+  border-width: 0 3px 3px 0;
 }
 /*# sourceMappingURL=style.css.map */

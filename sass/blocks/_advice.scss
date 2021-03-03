@@ -33,12 +33,14 @@
             transform: translate(0%, -50%);
         }
     }
+
     &__group {
-        margin-top: 120px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin: 120px -10px 60px;
     }
+
     &__item {
         width: 348px;
         height: 450px;
@@ -76,11 +78,13 @@
         text-overflow: ellipsis;
         padding-bottom: 37px;
     }
-&__content-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
+    &__content-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__date,
     &__count {
         font-size: 12px;
@@ -102,6 +106,76 @@
             top: 50%;
             left: 0;
             transform: translate(0%, -50%);
+        }
+    }
+}
+
+
+.pagination {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        font-size: 16px;
+        line-height: 1.88;
+        color: #8D8D8D;
+    }
+
+    &__page {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #C1C1C1;
+        border-radius: 100%;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 1;
+        text-align: center;
+        color: #C1C1C1;
+        width: 50px;
+        height: 50px;
+        margin: 0 -6px;
+        cursor: pointer;
+
+        &:not(:nth-last-child(-n+2)) {
+            margin-right: 8px;
+        }
+
+        &_active {
+            color: #FF0100;
+            border: 1px solid #FF0100;
+        }
+
+        &:hover {
+            color: #FF0100;
+            border: 1px solid #FF0100;
+
+        }
+    }
+
+    &__arrow {
+        border: solid #828282;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 4px;
+        margin: 0 20px;
+
+        &_prev {
+            transform: rotate(135deg);
+        }
+
+        &_next {
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            border: solid #FF0100;
+            border-width: 0 3px 3px 0;
         }
     }
 }
