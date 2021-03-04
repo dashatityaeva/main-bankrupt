@@ -1,4 +1,6 @@
 .article {
+    background-color: #FFFFFF;
+
     &__title {
 
         background-color: #FFFFFF;
@@ -46,10 +48,13 @@
             transform: translate(0%, -50%);
         }
     }
-&__memo-wrap {
-    display: flex;
-    flex-direction: column;
-}
+
+    &__memo-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-left: 45px;
+    }
+
     &__memo-file {
         font-size: 20px;
         line-height: 1.4;
@@ -57,7 +62,7 @@
         position: relative;
         padding-left: -36px;
         margin-bottom: 7px;
-       
+
 
         &:before {
             content: '';
@@ -65,11 +70,14 @@
             width: 21px;
             height: 21px;
             background-image: url(../img/download.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
             position: absolute;
             left: -36px;
             top: 50%;
             transform: translate(0%, -50%);
         }
+
         &:after {
             content: '';
             display: inline-block;
@@ -88,7 +96,38 @@
     }
 }
 
+@media (max-width: 768px) {
+    .article {
+        &__title {
+            font-size: 30px;
+            padding: 60px 0;
+        }
+        &__memo {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
 
+        &__memo-title {
+            max-width: 400px;
+            padding-left: 0;
+            margin-top: 84px;
+            margin-bottom: 20px;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                background-image: url(../img/memo.svg);
+                position: absolute;
+                left: 50%;
+                top: -45px;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
 
 @media (max-width: 425px) {
     .article {
@@ -96,6 +135,23 @@
             padding: 40px 0;
             font-size: 22px;
             line-height: 1.36;
+        }
+        &__memo {
+            padding: 30px 20px;
+        }
+        &__memo-wrap {
+            margin-left: 0;
+        }
+        &__memo-title {
+            font-size: 15px;
+        }
+        &__memo-file {
+            font-size: 18px;
+            line-height: 1.56;
+            &:before {
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 }

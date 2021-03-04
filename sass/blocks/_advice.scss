@@ -206,6 +206,12 @@
 }
 
 @media (max-width: 768px) {
+    .advice {
+        &__title {
+            font-size: 30px;
+            padding: 60px 0;
+        }
+    }
     .pagination {
         &__info {
             display: none;
