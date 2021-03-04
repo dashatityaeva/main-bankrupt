@@ -46,6 +46,7 @@
     }
 
     &__nav-item {
+        
         &:not(:last-child) {
             margin-bottom: -4px;
         }
@@ -55,7 +56,9 @@
         font-size: 13px;
         line-height: 1.38;
         color: #FFFFFF;
-
+        border-bottom: 1px solid rgba(227, 30, 36, 0.4);
+        padding-bottom: 2px;
+        
     }
 
     &__data {
