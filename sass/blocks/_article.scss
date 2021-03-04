@@ -115,9 +115,9 @@
 
     &__date,
     &__count {
-        font-size: 12px;
-        line-height: 1.66;
-        color: #767676;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #7B7B7B;
     }
 
     &__date {
@@ -478,6 +478,9 @@
         transform: rotate(45deg);
     }
 }
+.isHidden-mb {
+    display: none;
+}
 
 
 
@@ -517,18 +520,23 @@
         }
     }
 }
+
 @media (max-width: 768px) {
     .form {
-        &__input-text, &__input-btn {
+
+        &__input-text,
+        &__input-btn {
             max-width: inherit;
             width: 100%;
             margin-bottom: 26px;
         }
     }
+
     .article-content {
         &__banner {
             background-image: none;
         }
+
         &__banner-content {
             padding-left: 15px;
             display: flex;
@@ -541,6 +549,8 @@
 
 @media (max-width: 425px) {
     .article {
+        padding-bottom: 50px;
+
         &__title {
             padding: 40px 0;
             font-size: 22px;
@@ -568,5 +578,70 @@
                 height: 16px;
             }
         }
+    }
+
+    .article-content {
+        padding: 40px 15px 50px;
+
+        &__wrap {
+            padding: 30px 15px;
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        &__date,
+        &__count {
+            font-size: 12px;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 22px;
+            margin-bottom: 14px;
+
+        }
+        &__item_marker:before {
+            width: 10px;
+            height: 1px;
+            background-color: #E3151F;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        &__item_number:before {
+            content: counter(num) ". ";
+            counter-increment: num;
+            color: #E3151F;
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            font-family: 'Gotham Pro Bold', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 0.86;
+        }
+        &__emphasize, &__accent {
+            display: none;
+        }
+    }
+    .form {
+        &__inner {
+            margin-bottom: 0;
+        }
+    }
+    #form-block-1 {
+        display: none;
     }
 }

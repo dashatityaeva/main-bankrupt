@@ -1133,9 +1133,9 @@ p, h1, h2, h3, h4, ul, figure, ol {
 }
 
 .article-content__date, .article-content__count {
-  font-size: 12px;
-  line-height: 1.66;
-  color: #767676;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #7B7B7B;
 }
 
 .article-content__date {
@@ -1524,6 +1524,10 @@ p, h1, h2, h3, h4, ul, figure, ol {
           transform: rotate(45deg);
 }
 
+.isHidden-mb {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .article__title {
     font-size: 30px;
@@ -1579,6 +1583,9 @@ p, h1, h2, h3, h4, ul, figure, ol {
 }
 
 @media (max-width: 425px) {
+  .article {
+    padding-bottom: 50px;
+  }
   .article__title {
     padding: 40px 0;
     font-size: 22px;
@@ -1600,6 +1607,65 @@ p, h1, h2, h3, h4, ul, figure, ol {
   .article__memo-file:before {
     width: 16px;
     height: 16px;
+  }
+  .article-content {
+    padding: 40px 15px 50px;
+  }
+  .article-content__wrap {
+    padding: 30px 15px;
+  }
+  .article-content__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .article-content__date, .article-content__count {
+    font-size: 12px;
+  }
+  .article-content__text {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+  .article-content__subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 22px;
+    margin-bottom: 14px;
+  }
+  .article-content__item_marker:before {
+    width: 10px;
+    height: 1px;
+    background-color: #E3151F;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .article-content__item_number:before {
+    content: counter(num) ". ";
+    counter-increment: num;
+    color: #E3151F;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 0.86;
+  }
+  .article-content__emphasize, .article-content__accent {
+    display: none;
+  }
+  .form__inner {
+    margin-bottom: 0;
+  }
+  #form-block-1 {
+    display: none;
   }
 }
 
