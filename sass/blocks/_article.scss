@@ -1,5 +1,6 @@
 .article {
     background-color: #FFFFFF;
+    padding-bottom: 75px;
 
     &__title {
 
@@ -96,12 +97,276 @@
     }
 }
 
+/////////// end article/////////////////
+.article-content {
+    background: #F6F6F7;
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    &__wrap {
+        width: 980px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 45px 55px 96px;
+    }
+
+    &__info {
+        margin-bottom: 45px;
+    }
+
+    &__date,
+    &__count {
+        font-size: 12px;
+        line-height: 1.66;
+        color: #767676;
+    }
+
+    &__date {
+        margin-right: 45px;
+    }
+
+    &__count {
+        padding-left: 26px;
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            background-image: url(../img/show.svg);
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0%, -50%);
+        }
+    }
+
+    &__text {
+        font-family: 'Gotham Pro Light', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.62;
+        color: #131313;
+        margin-bottom: 20px;
+
+    }
+
+    &__subtitle {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #131313;
+        text-transform: uppercase;
+        margin-top: 38px;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        padding-left: 27px;
+        position: relative;
+        margin: 7px 0;
+
+        &_marker {
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 15px;
+                height: 2px;
+                background-color: #E3151F;
+                position: absolute;
+                left: 0;
+                top: 12px;
+            }
+        }
+
+        &_number {
+            &:before {
+                content: counter(num) '. ';
+                counter-increment: num;
+                color: #E3151F;
+                position: absolute;
+                left: 4px;
+                top: 7px;
+                font-family: 'Gotham Pro Bold', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 0.86;
+            }
+        }
+    }
+
+    &__emphasize {
+        padding: 50px 0;
+    }
+
+    &__emphasize-text {
+        font-size: 16px;
+        line-height: 1.87;
+        color: #000000;
+        position: relative;
+        padding-left: 30px;
+
+        &:before {
+            content: '';
+            border-left: 5px solid #FF0100;
+            height: 140%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0%, -50%);
+        }
+    }
+
+    &__banner {
+        background-color: #FBFBFB;
+        width: 100%;
+        height: 250px;
+        background-image: url(../img/banner-img.png);
+        background-repeat: no-repeat;
+        background-position: left 45px bottom;
+        margin: 50px 0;
+    }
+
+    &__banner-content {
+        padding-top: 48px;
+        padding-left: 262px;
+    }
+
+    &__banner-text {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #000000;
+        margin-bottom: 10px;
+
+        &_big {
+            font-family: 'Gotham Pro Bold', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 1.33;
+        }
+
+        &_stress {
+            color: #FF0100;
+        }
+    }
+
+    &__banner-links {
+        display: flex;
+        margin: 25px 0;
+    }
+
+    &__wrap-link {
+        width: 134px;
+        height: 40px;
+        border-radius: 4px;
+        font-family: 'Gotham Pro Light', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 1.56;
+        padding-left: 36px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+
+        &_whatsapp,
+        &_telegram {
+            &:before {
+                content: '';
+                display: inline-block;
+                background-image: url(../img/socials/whatsapp.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 50%;
+                left: 9px;
+                transform: translate(0%, -50%);
+
+            }
+        }
+
+        &_whatsapp {
+            background-color: #4CAF50;
+            margin-right: 20px;
+
+            &:before {
+                background-image: url(../img/socials/whatsapp.svg);
+            }
+        }
+
+        &_telegram {
+            background-color: #039BE5;
+
+            &:before {
+                background-image: url(../img/socials/telegram.svg);
+            }
+        }
+    }
+
+    &__wrap-link a {
+        color: #ffffff;
+    }
+
+    &__wrap-link span {
+        font-size: 14px;
+    }
+
+
+    &__accent {
+        border-top: 2px solid #E3151F;
+        padding: 20px 0px;
+        padding-left: 90px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.03);
+        margin: 50px 0;
+        
+
+    }
+    &__accent-title {
+        font-family: 'Gotham Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 1.73;
+        color: #000000;
+        position: relative;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 59px;
+            height: 59px;
+            background-image: url(../img/accent.svg);
+            position: absolute;
+            left: -84px;
+            top: 50%;
+            transform: translate(0%, -50%);
+        }
+    }
+}
+
+
+
+
+
+
+////////////media//////////////
+
 @media (max-width: 768px) {
     .article {
         &__title {
             font-size: 30px;
             padding: 60px 0;
         }
+
         &__memo {
             flex-wrap: wrap;
             justify-content: center;
@@ -136,18 +401,23 @@
             font-size: 22px;
             line-height: 1.36;
         }
+
         &__memo {
             padding: 30px 20px;
         }
+
         &__memo-wrap {
             margin-left: 0;
         }
+
         &__memo-title {
             font-size: 15px;
         }
+
         &__memo-file {
             font-size: 18px;
             line-height: 1.56;
+
             &:before {
                 width: 16px;
                 height: 16px;

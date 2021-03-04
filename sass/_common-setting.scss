@@ -10,6 +10,12 @@
     font-weight: normal;
     src: url('../fonts/GothamPro-Bold.woff') format('woff');
 }
+@font-face {
+    font-family: 'Gotham Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/GothamPro-Light.woff') format('woff');
+}
 $main-color-text: #ffffff;
 
 *,
@@ -37,6 +43,10 @@ a {
 li {
     list-style-type: none;
 }
+ol {
+    list-style-type: none; 
+    counter-reset: num; 
+   }
 
 // img {
 //     max-width: 100%;
@@ -49,7 +59,7 @@ li {
     margin: 0 auto;
     padding: 0 30px;
 }
-p, h1, h2, h3, h4, ul, figure {
+p, h1, h2, h3, h4, ul, figure, ol {
     margin: 0;
     padding: 0;
 }

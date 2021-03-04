@@ -356,6 +356,13 @@ template {
   src: url("../fonts/GothamPro-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Gotham Pro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GothamPro-Light.woff") format("woff");
+}
+
 *,
 *::before,
 *::after {
@@ -382,6 +389,11 @@ li {
   list-style-type: none;
 }
 
+ol {
+  list-style-type: none;
+  counter-reset: num;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -390,7 +402,7 @@ li {
   padding: 0 30px;
 }
 
-p, h1, h2, h3, h4, ul, figure {
+p, h1, h2, h3, h4, ul, figure, ol {
   margin: 0;
   padding: 0;
 }
@@ -996,6 +1008,7 @@ p, h1, h2, h3, h4, ul, figure {
 
 .article {
   background-color: #FFFFFF;
+  padding-bottom: 75px;
 }
 
 .article__title {
@@ -1101,6 +1114,260 @@ p, h1, h2, h3, h4, ul, figure {
   font-size: 12px;
   line-height: 1.33;
   color: #636363;
+}
+
+.article-content {
+  background: #F6F6F7;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.article-content__wrap {
+  width: 980px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 45px 55px 96px;
+}
+
+.article-content__info {
+  margin-bottom: 45px;
+}
+
+.article-content__date, .article-content__count {
+  font-size: 12px;
+  line-height: 1.66;
+  color: #767676;
+}
+
+.article-content__date {
+  margin-right: 45px;
+}
+
+.article-content__count {
+  padding-left: 26px;
+  position: relative;
+  cursor: pointer;
+}
+
+.article-content__count:before {
+  content: '';
+  background-image: url(../img/show.svg);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.article-content__text {
+  font-family: 'Gotham Pro Light', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #131313;
+  margin-bottom: 20px;
+}
+
+.article-content__subtitle {
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #131313;
+  text-transform: uppercase;
+  margin-top: 38px;
+  margin-bottom: 25px;
+}
+
+.article-content__item {
+  padding-left: 27px;
+  position: relative;
+  margin: 7px 0;
+}
+
+.article-content__item_marker:before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background-color: #E3151F;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+
+.article-content__item_number:before {
+  content: counter(num) ". ";
+  counter-increment: num;
+  color: #E3151F;
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 0.86;
+}
+
+.article-content__emphasize {
+  padding: 50px 0;
+}
+
+.article-content__emphasize-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: #000000;
+  position: relative;
+  padding-left: 30px;
+}
+
+.article-content__emphasize-text:before {
+  content: '';
+  border-left: 5px solid #FF0100;
+  height: 140%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.article-content__banner {
+  background-color: #FBFBFB;
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/banner-img.png);
+  background-repeat: no-repeat;
+  background-position: left 45px bottom;
+  margin: 50px 0;
+}
+
+.article-content__banner-content {
+  padding-top: 48px;
+  padding-left: 262px;
+}
+
+.article-content__banner-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.article-content__banner-text_big {
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.article-content__banner-text_stress {
+  color: #FF0100;
+}
+
+.article-content__banner-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0;
+}
+
+.article-content__wrap-link {
+  width: 134px;
+  height: 40px;
+  border-radius: 4px;
+  font-family: 'Gotham Pro Light', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 1.56;
+  padding-left: 36px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-content__wrap-link_whatsapp:before, .article-content__wrap-link_telegram:before {
+  content: '';
+  display: inline-block;
+  background-image: url(../img/socials/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.article-content__wrap-link_whatsapp {
+  background-color: #4CAF50;
+  margin-right: 20px;
+}
+
+.article-content__wrap-link_whatsapp:before {
+  background-image: url(../img/socials/whatsapp.svg);
+}
+
+.article-content__wrap-link_telegram {
+  background-color: #039BE5;
+}
+
+.article-content__wrap-link_telegram:before {
+  background-image: url(../img/socials/telegram.svg);
+}
+
+.article-content__wrap-link a {
+  color: #ffffff;
+}
+
+.article-content__wrap-link span {
+  font-size: 14px;
+}
+
+.article-content__accent {
+  border-top: 2px solid #E3151F;
+  padding: 20px 0px;
+  padding-left: 90px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.03);
+  margin: 50px 0;
+}
+
+.article-content__accent-title {
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.73;
+  color: #000000;
+  position: relative;
+}
+
+.article-content__accent-title:before {
+  content: '';
+  display: inline-block;
+  width: 59px;
+  height: 59px;
+  background-image: url(../img/accent.svg);
+  position: absolute;
+  left: -84px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
 @media (max-width: 768px) {
