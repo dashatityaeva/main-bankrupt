@@ -55,10 +55,12 @@
     &__nav-link {
         font-size: 13px;
         line-height: 1.38;
-        color: #FFFFFF;
+        color: #FFFFFF;;
+        
+    }
+    &__nav-mb &__nav-link {
         border-bottom: 1px solid rgba(227, 30, 36, 0.4);
         padding-bottom: 2px;
-        
     }
 
     &__data {

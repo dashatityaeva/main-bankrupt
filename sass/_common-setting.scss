@@ -47,6 +47,9 @@ ol {
     list-style-type: none; 
     counter-reset: num; 
    }
+   summary::-webkit-details-marker {
+       display: none;
+   }
 
 // img {
 //     max-width: 100%;
