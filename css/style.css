@@ -1036,8 +1036,12 @@ p, h1, h2, h3, h4, ul, figure, ol {
 
 @media (max-width: 1144px) {
   .advice__group {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advice__item {
+    margin: 5px;
   }
 }
 
@@ -1053,6 +1057,16 @@ p, h1, h2, h3, h4, ul, figure, ol {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .read-more__title {
+    font-size: 24px;
+  }
+  .read-more__link {
+    font-size: 25px;
+  }
+  .read-more__item {
+    padding-top: 26px;
+    padding-bottom: 16px;
   }
 }
 
@@ -1091,6 +1105,17 @@ p, h1, h2, h3, h4, ul, figure, ol {
     line-height: 1.11;
     width: 40px;
     height: 40px;
+  }
+  .read-more {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+  .read-more__title {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .read-more__link {
+    font-size: 20px;
   }
 }
 
