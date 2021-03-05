@@ -478,6 +478,7 @@
         transform: rotate(45deg);
     }
 }
+
 .isHidden-mb {
     display: none;
 }
@@ -611,6 +612,7 @@
             margin-bottom: 14px;
 
         }
+
         &__item_marker:before {
             width: 10px;
             height: 1px;
@@ -619,6 +621,7 @@
             left: 0;
             top: 8px;
         }
+
         &__item_number:before {
             content: counter(num) ". ";
             counter-increment: num;
@@ -632,15 +635,19 @@
             font-size: 12px;
             line-height: 0.86;
         }
-        &__emphasize, &__accent {
+
+        &__emphasize,
+        &__accent {
             display: none;
         }
     }
+
     .form {
         &__inner {
             margin-bottom: 0;
         }
     }
+
     #form-block-1 {
         display: none;
     }
