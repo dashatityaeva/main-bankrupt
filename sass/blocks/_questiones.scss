@@ -1,4 +1,5 @@
 .questiones {
+    padding-bottom: 100px;  
     &__title {
         font-family: 'Gotham Pro Bold', sans-serif;
         font-style: normal;
@@ -10,10 +11,13 @@
         padding: 85px 0;
     }
 
+    &__group {
+        margin-bottom: 90px;
+    }
 
-&__item {
-    padding-bottom: 10px;
-}
+    &__item {
+        padding-bottom: 10px;
+    }
 
 
     &__name {
@@ -32,6 +36,7 @@
         padding: 10px 80px 10px 40px;
         outline: 1px solid #FAFAFA;
         position: relative;
+        cursor: pointer;
 
         &:after {
             content: '';
@@ -41,11 +46,11 @@
             border-right: 3px solid #232323;
             margin-right: 14px;
             transform: rotate(135deg);
-             border-radius: 2px;
-             position: absolute;
-             top: 50%;
-             right: 40px;
-             transform: translate(0% -50%);
+            border-radius: 2px;
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            transform: translate(0% -50%);
         }
     }
 
@@ -62,6 +67,7 @@
     &__item[open]>&__name {
         color: #FFFFFF;
         background-color: #E3151F;
+
         &:after {
             transform: rotate(-45deg);
             border-top: 3px solid #FFFFFF;
@@ -70,4 +76,75 @@
 
 
     }
+&__form-wrap {
+    margin-bottom: 27px;
+}
+    &__form-title {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 1.07;
+        color: #232323;
+        margin-bottom: 12px;
+
+        &_accent {
+            color: #E3151F;
+
+        }
+    }
+
+    &__form-text {
+        display: block;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #232323;
+        margin-bottom: 35px;
+    }
+
+    &__form-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__input-text {
+        width: 100%;
+        height: 57px;
+        background: #FFFFFF;
+        border: 0.5px solid #949494;
+        border-radius: 5px;
+        padding: 0 26px;
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+
+    &__input-textarea {
+        width: 100%;
+        height: 175px;
+        background: #FFFFFF;
+        border: 0.5px solid #949494;
+        border-radius: 5px;
+        padding: 18px 26px;
+    }
+
+    &__input-btn {
+        margin: 0 auto;
+        display: block;
+        background: #E3151F;
+        border-radius: 80px;
+        text-transform: uppercase;
+        border: none;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 1.43;
+        padding: 20px 60px;
+        text-align: center;
+    }
+    
 }
