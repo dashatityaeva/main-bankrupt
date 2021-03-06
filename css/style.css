@@ -1725,7 +1725,7 @@ p, h1, h2, h3, h4, ul, figure, ol {
     padding: 40px 15px 50px;
   }
   .article-content__wrap {
-    padding: 0px;
+    padding: 30px 15px;
   }
   .article-content__banner-text {
     font-size: 11px;
@@ -1779,6 +1779,9 @@ p, h1, h2, h3, h4, ul, figure, ol {
   }
   .article-content__emphasize, .article-content__accent {
     display: none;
+  }
+  .article-content__wrap-link span {
+    font-size: 12px;
   }
   .form__inner {
     margin-bottom: 0;
@@ -2000,6 +2003,193 @@ p, h1, h2, h3, h4, ul, figure, ol {
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+
+.bankruptcy {
+  padding-bottom: 68px;
+}
+
+.bankruptcy__title {
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.68;
+  text-transform: uppercase;
+  color: #131313;
+  padding-bottom: 40px;
+}
+
+.bankruptcy__description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #000000;
+  padding-left: 20px;
+  position: relative;
+}
+
+.bankruptcy__description:before {
+  content: '';
+  border-left: 3px solid #FF0100;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.bankruptcy__form-wrap {
+  background: #FFFFFF;
+  padding-bottom: 40px;
+  -webkit-box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.06);
+}
+
+.bankruptcy__form:before {
+  content: '';
+  border-top: 2px solid #E3171F;
+  width: 100%;
+  display: block;
+  margin-top: -9px;
+}
+
+.bankruptcy__wrap-btn {
+  height: 42px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+
+.bankruptcy__btn {
+  border: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+.bankruptcy__btn_minus {
+  background-image: url(../img/minus-btn.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bankruptcy__btn_plus {
+  background-image: url(../img/plus-btn.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bankruptcy__btn__value {
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #131313;
+  padding: 0 37px;
+  background-color: #F9F9F9;
+  border: none;
+  padding-left: 26px;
+}
+
+.bankruptcy__form-title {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #131313;
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 26px;
+}
+
+.bankruptcy__form-text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #131313;
+  margin-bottom: 6px;
+}
+
+.bankruptcy__wrap-btn {
+  margin-bottom: 30px;
+}
+
+.bankruptcy__btn-along {
+  display: block;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  border: none;
+  width: 180px;
+  height: 45px;
+  background: #FFFFFF;
+  border: 2px solid #E3151F;
+  border-radius: 80px;
+  font-size: 15px;
+  line-height: 45px;
+  color: #E3151F;
+  margin: 11px auto;
+}
+
+.bankruptcy__value {
+  border: none;
+  width: 80%;
+  outline: none;
+  text-align: center;
+  margin: 0 -105px;
+}
+
+.how-we {
+  background: #F6F6F7;
+  padding: 42px 0;
+}
+
+.how-we__title {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 30px;
+}
+
+.how-we__advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.how-we__svg-wrap {
+  width: 24px;
+  height: 36px;
+}
+
+.how-we__svg {
+  width: inherit;
+  height: inherit;
+}
+
+.how-we__text {
+  font-size: 13px;
+  line-height: 1.38;
+  color: #000000;
+  margin-left: 18px;
+  max-width: 220px;
 }
 
 .footer {

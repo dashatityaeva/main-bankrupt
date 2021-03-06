@@ -3,7 +3,6 @@
     padding-bottom: 75px;
 
     &__title {
-
         background-color: #FFFFFF;
         font-family: 'Gotham Pro Bold', sans-serif;
         font-style: normal;
@@ -584,7 +583,7 @@
             padding: 40px 15px 50px;
 
             &__wrap {
-                padding: 0px;
+                padding: 30px 15px;
             }
             &__banner-text {
                 font-size: 11px;
@@ -643,6 +642,9 @@
             &__emphasize,
             &__accent {
                 display: none;
+            }
+            &__wrap-link span {
+                font-size: 12px;
             }
         }
 
