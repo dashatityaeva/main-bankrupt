@@ -2505,6 +2505,64 @@ p, h1, h2, h3, h4, ul, figure, ol {
   text-transform: uppercase;
 }
 
+.map {
+  padding-bottom: 113px;
+}
+
+.map__title {
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 30px;
+}
+
+.map__nav-link {
+  font-size: 18px;
+  line-height: 1.67;
+  color: #4CA3D4;
+  position: relative;
+}
+
+.map__nav-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #4CA3D4;
+}
+
+.map__nav-link:hover {
+  color: #397ba1;
+}
+
+.map__nav-item {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 14px;
+}
+
+.map__nav-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  left: 0;
+  width: 28px;
+  height: 16px;
+  background-image: url(../img/arrow-map.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .footer {
   background-color: #181818;
   padding-top: 84px;
