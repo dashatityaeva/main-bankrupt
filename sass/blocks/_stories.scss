@@ -10,6 +10,7 @@
         color: #131313;
         margin-bottom: 26px;
     }
+
     &__description {
         font-size: 14px;
         line-height: 1.71;
@@ -17,6 +18,7 @@
         position: relative;
         padding-left: 20px;
         margin-bottom: 20px;
+
         &:before {
             content: '';
             border-left: 3px solid #FF0100;
@@ -26,5 +28,27 @@
             left: 0;
             transform: translate(0%, -50%);
         }
+    }
+
+}
+
+.know {
+    &__btn-more {
+        margin: 0 auto;
+        display: block;
+        background: #E3151F;
+        border-radius: 80px;
+        text-transform: uppercase;
+        border: none;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.67;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 16px 25px;
+        text-align: center;
     }
 }

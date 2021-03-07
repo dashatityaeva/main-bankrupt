@@ -2465,6 +2465,10 @@ p, h1, h2, h3, h4, ul, figure, ol {
           transform: rotate(180deg);
 }
 
+.know__wrap {
+  padding-top: 36px;
+}
+
 .polity {
   padding-bottom: 116px;
 }
@@ -2758,6 +2762,25 @@ p, h1, h2, h3, h4, ul, figure, ol {
   left: 0;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
+}
+
+.know__btn-more {
+  margin: 0 auto;
+  display: block;
+  background: #E3151F;
+  border-radius: 80px;
+  text-transform: uppercase;
+  border: none;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 16px 25px;
+  text-align: center;
 }
 
 .results__title {

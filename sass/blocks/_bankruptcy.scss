@@ -340,8 +340,6 @@
     }
 }
 
-
-
 .know {
     background-color: #F6F6F7;
     padding-top: 42px;
@@ -431,5 +429,8 @@
             background-color: transparent;
             transform: rotate(180deg);
         }
+    }
+    &__wrap{
+        padding-top: 36px;
     }
 }
