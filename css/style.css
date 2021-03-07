@@ -2595,6 +2595,69 @@ p, h1, h2, h3, h4, ul, figure, ol {
           transform: translate(0%, -50%);
 }
 
+.about__wrap {
+  position: relative;
+}
+
+.about__wrap:after {
+  content: '';
+  border-top: 2px solid #E3171F;
+  width: 100%;
+  display: block;
+}
+
+.about__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.exposition {
+  padding-top: 60px;
+}
+
+.exposition__description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #000000;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.exposition__description:before {
+  content: '';
+  border-left: 3px solid #FF0100;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.exposition__text {
+  font-size: 14px;
+  line-height: 1.78;
+  color: #000000;
+  margin-bottom: 23px;
+}
+
+.exposition__text_accent {
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.exposition__wrap-img {
+  max-width: 425px;
+  width: 100%;
+  margin-bottom: -8px;
+}
+
+.exposition__img {
+  width: inherit;
+}
+
 .creditors__title {
   background-color: #FFFFFF;
   font-family: 'Gotham Pro Bold', sans-serif;
