@@ -2044,10 +2044,13 @@ p, h1, h2, h3, h4, ul, figure, ol {
   background: #FFFFFF;
 }
 
+.bankruptcy__form-inner {
+  padding: 0 20px 40px 20px;
+}
+
 .bankruptcy__form {
   -webkit-box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.06);
-  padding: 0 20px 40px 20px;
 }
 
 .bankruptcy__form:before {
@@ -2056,6 +2059,7 @@ p, h1, h2, h3, h4, ul, figure, ol {
   width: 100%;
   display: block;
   margin-top: -9px;
+  padding: 0 20px;
 }
 
 .bankruptcy__wrap-btn {
@@ -2680,7 +2684,7 @@ p, h1, h2, h3, h4, ul, figure, ol {
   color: #000000;
   position: relative;
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .creditors__description:before {
@@ -2692,6 +2696,10 @@ p, h1, h2, h3, h4, ul, figure, ol {
   left: 0;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
+}
+
+.main-creditors {
+  padding-bottom: 44px;
 }
 
 .payment__title {
