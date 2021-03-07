@@ -1,0 +1,30 @@
+.results {
+    &__title {
+        background-color: #FFFFFF;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.65;
+        text-transform: uppercase;
+        color: #131313;
+        margin-bottom: 26px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 1.71;
+        color: #000000;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        &:before {
+            content: '';
+            border-left: 3px solid #FF0100;
+            height: 110%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0%, -50%);
+        }
+    }
+}
