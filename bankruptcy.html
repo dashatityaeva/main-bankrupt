@@ -140,31 +140,55 @@
             </div>
             <div class="duty__wrap">
                 <div class="duty__tabs-wrap">
-                    <div class="dd">
-                        <input class="duty__tab-input" type="radio" name="tabs" id="tab-1" checked>
-                        <input class="duty__tab-input" type="radio" name="tabs" id="tab-2">
-                        <input class="duty__tab-input" type="radio" name="tabs" id="tab-3">
-                        <label class="duty__tab-lable" for="tab-1">Tab 1</label>
-                        <label class="duty__tab-lable" for="tab-2">Tab 2</label>
-                        <label class="duty__tab-lable" for="tab-3">Tab 3</label>
+                   
+                        <div class="duty__tabs-nav">
+                            <div class="duty__tabs-item duty__tabs-item_active" data-tab-name="tab-1">Финансовые <br> выгоды</div>
+                            <div class="duty__tabs-item" data-tab-name="tab-2">Преимущества работы с нами</div>
+                            <div class="duty__tabs-item" data-tab-name="tab-3">Что будет, если не списать долг?</div>
+                        </div>
+                   
+                    <div class="duty__tabs-content">
+                        <div class="duty__tabs-info  duty__tabs-info_active tab-1">
+                            <div class="duty__tabs-inner">
+                                <div class="duty__benefit">
+                                    <p class="duty__benefit-text">Лёгкий старт</p>
+                                    <p class="duty__benefit-description">Запускаем работу по вашей процедуре в день заключения договора с платежом 5 тысяч рублей.</p>
+                                </div>
+                                <div class="duty__benefit">
+                                    <p class="duty__benefit-text">Беспроцентная рассрочка</p>
+                                    <p class="duty__benefit-description">Даем рассрочку на срок от 8 до 11 месяцев без процентов.</p>
+                                </div>
+                                <div class="duty__benefit">
+                                    <p class="duty__benefit-text">Фиксированная и неизменная цена</p>
+                                    <p class="duty__benefit-description">Мы фиксируем цену в договоре и она не меняется в ходе процедуры. Никаких навязанных услуг и дополнительных оплат.</p>
+                                </div>
+                                <div class="duty__benefit">
+                                    <p class="duty__benefit-text">Экономия</p>
+                                    <p class="duty__benefit-description">Потратите минимум в 5 раз меньше денег и освободитесь от долгов уже через 6-8 месяцев, признав себя банкротом.</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="duty__tabs-info tab-2">tab2</div>
+                        <div class="duty__tabs-info tab-3">tab3</div>
                     </div>
-                    <div class="duty__content content-1">Content 1</div>
-                    <div class="duty__content content-2">Content 2</div>
-                    <div class="duty__content content-3">Content 3</div>
                 </div>
             </div>
         </section>
+
+
+
         <section class="know">
             <div class="container">
-                <h3 class="know__title">Узнайте как клиенты списали миллионные долги</h3>                
+                <h3 class="know__title">Узнайте как клиенты списали миллионные долги</h3>
             </div>
             <div class="know__slider-wrap">
                 <div class="know__slider-inner">
                     <div class="know__slider-item">
                         <div class="know__video-wrap">
-                            <video class="know__slider-video" width="100%" height="auto" controls preload="none" poster="img/poster-video.jpg">
-                                <source  src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                              </video>
+                            <video class="know__slider-video" width="100%" height="auto" controls preload="none"
+                                poster="img/poster-video.jpg">
+                                <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            </video>
                         </div>
                         <div class="know__slider-content">
                             <p class="know__slider-text">Сумма списанного долга</p>
@@ -366,6 +390,7 @@
             <a href="#"><img class="up-img" src="img/up.svg" alt="Кнопка подняться наверх"></a>
         </div>
     </footer>
+<script src="js/script.js"></script>
 </body>
 
 </html>

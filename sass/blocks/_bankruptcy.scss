@@ -193,57 +193,154 @@
         margin-bottom: 30px;
     }
 
-    &__tabs-wrap {
+    &__tabs-nav {
         display: flex;
-        //flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: scroll;
         position: relative;
-        overflow-x: scroll;
     }
 
-    &__tab-input {
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    &__tab-lable {
-        display: block;
+    &__tabs-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40%;
+        width: 136px;
+        font-size: 14px;
+        line-height: 1.29;
+        color: #000000;
         text-align: center;
-        width: 100%;
-        overflow-x: scroll;
-        flex-basis: 40%;
+        cursor: pointer;
+        padding-bottom: 14px;
+        position: relative;
+
+        &:last-child {
+            position: relative;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-bottom: 1px solid #E8E8E8;
+                margin: 2px 0;
+
+                background: transparent;
+                background-image: linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 150%);
+
+            }
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-bottom: 1px solid #E8E8E8;
+            margin: 2px 0;
+        }
+
+
+
+        &_active {
+            font-family: 'Gotham Pro Bold', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            position: relative;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                border-bottom: 5px solid #E3171F;
+                border-radius: 4px;
+
+
+            }
+
+            &:last-child {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    border-bottom: 5px solid #E3171F;
+                    border-radius: 4px;
+                }
+            }
+
+
+
+        }
     }
 
-    &__content {
+    &__tabs-content {
+        padding: 35px 15px 0 15px;
+    }
 
-        width: 100%;
+    &__tabs-info {
         display: none;
-        background-color: rgb(208, 238, 40);
+
+        &_active {
+            display: block;
+        }
     }
 
+    &__benefit {
+        position: relative;
+        padding-left: 34px;
+        margin-bottom: 30px;
+
+        &:before {
+            content: '';
+            background-image: url(../img/advantage.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 21px;
+            height: 17px;
+        }
+    }
+
+    &__benefit-text {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1.38;
+        color: #000000;
+        margin-bottom: 8px;
+
+    }
+
+    &__benefit-description {
+        font-family: 'Gotham Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #131313;
+    }
 }
 
-.dd {
-    width: 100%;
-    display: flex;
-    //flex-wrap: wrap;
-    position: relative;
-    overflow-x: scroll;
-    overflow: hidden;
-}
 
-#tab-1:checked .duty__tab-lable[for='tab-1'],
-#tab-2:checked~.duty__tab-lable[for='tab-2'],
-#tab-3:checked~.duty__tab-lable[for='tab-3'] {
-    background-color: rgb(25, 155, 101);
-}
-
-#tab-1:checked .content-1,
-#tab-2:checked .content-2,
-#tab-3:checked .content-3 {
-    display: block;
-}
 
 .know {
     background-color: #F6F6F7;
