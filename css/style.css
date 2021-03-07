@@ -2465,6 +2465,46 @@ p, h1, h2, h3, h4, ul, figure, ol {
           transform: rotate(180deg);
 }
 
+.polity {
+  padding-bottom: 116px;
+}
+
+.polity__title {
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.65;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 20px;
+}
+
+.polity__block {
+  margin-bottom: 24px;
+}
+
+.polity__text {
+  font-family: 'Gotham Pro Light', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #232323;
+  margin-bottom: 12px;
+}
+
+.polity__subtitle {
+  font-family: 'Gotham Pro Bold', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
 .footer {
   background-color: #181818;
   padding-top: 84px;

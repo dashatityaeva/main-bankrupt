@@ -1,0 +1,38 @@
+.polity {
+    padding-bottom: 116px;
+    &__title {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 1.65;
+        text-transform: uppercase;
+        color: #131313;
+        margin-bottom: 20px;
+    }
+    &__block {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-family: 'Gotham Pro Light', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #232323;
+        margin-bottom: 12px;
+
+    }
+
+    &__subtitle {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #131313;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+}

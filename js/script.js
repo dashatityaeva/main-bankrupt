@@ -25,24 +25,3 @@ let tab = function () {
 };
 
 tab();
-
-// let win = window,
-//     docEl = document.documentElement,
-//     nav = document.querySelector('.duty__tabs-nav');
-
-
-
-// nav.onscroll = function() {
-//     // console.log(this.clientWidth);
-//     // console.log(this.screenX);
-//     // console.log(this.scrollLeft);
-//     // console.log(this.scrollWidth);
-//     // console.log(this.offsetWidth);
-//     //console.log(docEl.scrollLef);
-//     // console.log(docEl.clientTop);
-//     //let change = 
-//     if ((this.scrollWidth-this.clientWidth) = 0 ) {
-
-//     }
-//     console.dir(nav);
-// }
