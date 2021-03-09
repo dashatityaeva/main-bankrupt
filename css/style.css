@@ -1533,34 +1533,7 @@ p, h1, h2, h3, h4, ul, figure, ol {
   padding-left: 26px;
 }
 
-.form__input-text::-webkit-input-placeholder {
-  font-family: 'Gotham Pro', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.33;
-  color: #717171;
-}
-
-.form__input-text:-ms-input-placeholder {
-  font-family: 'Gotham Pro', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.33;
-  color: #717171;
-}
-
-.form__input-text::-ms-input-placeholder {
-  font-family: 'Gotham Pro', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.33;
-  color: #717171;
-}
-
-.form__input-text::placeholder {
+.form__input-text:placeholder {
   font-family: 'Gotham Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2911,6 +2884,7 @@ p, h1, h2, h3, h4, ul, figure, ol {
 }
 
 .case__total {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   color: #E3151F;
