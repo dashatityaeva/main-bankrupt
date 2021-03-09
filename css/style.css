@@ -1857,6 +1857,10 @@ p, h1, h2, h3, h4, ul, figure, ol {
           transform: translate(0% -50%);
 }
 
+.questiones__text-wrap {
+  padding: 40px;
+}
+
 .questiones__text {
   font-family: 'Gotham Pro Light', sans-serif;
   font-style: normal;
@@ -1864,7 +1868,14 @@ p, h1, h2, h3, h4, ul, figure, ol {
   font-size: 17px;
   line-height: 1.53;
   color: #232323;
-  padding: 40px;
+  padding-bottom: 5px;
+}
+
+.questiones__img {
+  max-width: 320px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .questiones__item[open] > .questiones__name {
@@ -1975,6 +1986,9 @@ p, h1, h2, h3, h4, ul, figure, ol {
     padding-top: 10px;
     padding-bottom: 30px;
   }
+  .questiones__title_little {
+    font-size: 14px;
+  }
   .questiones__name {
     font-size: 17px;
     text-transform: none;
@@ -1983,13 +1997,21 @@ p, h1, h2, h3, h4, ul, figure, ol {
   .questiones__name:after {
     right: 15px;
   }
+  .questiones__name_little {
+    font-size: 14px;
+  }
   .questiones__group {
     margin-bottom: 47px;
+  }
+  .questiones__text-wrap {
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 24px;
   }
   .questiones__text {
     font-size: 14px;
     line-height: 1.71;
-    padding: 20px;
+    padding-bottom: 5px;
   }
   .questiones__form-title {
     font-size: 24px;
@@ -2700,6 +2722,10 @@ p, h1, h2, h3, h4, ul, figure, ol {
 
 .main-creditors {
   padding-bottom: 44px;
+}
+
+.payment {
+  padding-bottom: 55px;
 }
 
 .payment__title {
