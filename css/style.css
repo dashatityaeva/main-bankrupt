@@ -3025,6 +3025,15 @@ p, h1, h2, h3, h4, ul, figure, ol {
   cursor: pointer;
 }
 
+.reviews__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .reviews__rating-block input[type="radio"] {
   display: none;
 }

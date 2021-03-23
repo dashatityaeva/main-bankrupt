@@ -101,6 +101,10 @@
         background: url(../img/rating.svg) no-repeat 50% 0;
         cursor: pointer;
     }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
