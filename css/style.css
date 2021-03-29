@@ -2999,6 +2999,10 @@ p, h1, h2, h3, h4, ul, figure, ol {
   cursor: pointer;
 }
 
+.bg-gray {
+  background-color: #F6F6F7;
+}
+
 @media (max-width: 1130px) {
   .case__debt-name, .case__stage-date {
     display: block;
