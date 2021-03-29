@@ -28,12 +28,14 @@ tab();
 
 
 //=========== результаты работы=============
-$(document).ready(function() {
-    $('.case__name').click(function() {
+$(document).ready(function () {
+    $('.case__name').click(function () {
         $(this).parent().toggleClass('case__item_active');
-    })
+    });
 
-
+    $(".case__item").hover(function () {
+        $(this).toggleClass("case__item_hover")
+    });
 });
 
 //=========== результаты работы=============
