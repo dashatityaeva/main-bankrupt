@@ -25,3 +25,15 @@ let tab = function () {
 };
 
 tab();
+
+
+//=========== результаты работы=============
+$(document).ready(function() {
+    $('.case__name').click(function() {
+        $(this).parent().toggleClass('case__item_active');
+    })
+
+
+});
+
+//=========== результаты работы=============

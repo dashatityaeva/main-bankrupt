@@ -1,0 +1,327 @@
+.results {
+    &__title {
+        background-color: #FFFFFF;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 1.33;
+        text-transform: uppercase;
+        color: #131313;
+        padding: 85px 0;
+    }
+
+    &__description {
+        color: #000000;
+        position: relative;
+        padding-left: 60px;
+        font-size: 18px;
+        line-height: 1.67;
+
+        &:before {
+            content: '';
+            border-left: 5px solid #FF0100;
+            height: 140%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0%, -50%);
+        }
+    }
+}
+
+.case {
+    &__group {
+        margin: 100px 0px;
+
+    }
+
+    &__item {
+        padding: 16px 30px;
+        width: 100%;
+        height: auto;
+        background-color: #FFFFFF;
+        border: 1px solid #EBEBEB;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.06);
+            z-index: 1;
+            position: relative;
+        }
+    }
+
+    &__name {
+        width: 17%;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #E3151F;
+        position: relative;
+        padding-right: 20px;
+        margin-right: 20px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            display: block;
+            width: 1px;
+            height: 85px;
+            background-color: #EBEBEB;
+            transform: translate(0, -50%);
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 83%;
+    }
+
+    &__stage,
+    &__debt,
+    &__more {
+        width: 33.33%;
+    }
+
+    &__stage {
+        position: relative;
+        padding-right: 20px;
+        margin-right: 20px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            display: block;
+            width: 1px;
+            height: 85px;
+            background-color: #EBEBEB;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &__debt {
+        position: relative;
+        padding-right: 20px;
+        margin-right: 20px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            display: block;
+            width: 1px;
+            height: 85px;
+            background-color: #EBEBEB;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &__stage-name {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #000000;
+        display: block;
+        margin-bottom: 6px;
+
+    }
+
+    &__stage-row {
+        font-family: 'Gotham Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1.85;
+        color: #000000;
+    }
+
+    &__stage-date {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+
+    }
+
+    &__debt-row {
+        font-family: 'Gotham Pro', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #E3151F;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__debt-name {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    &__btn {
+        margin: 0 auto;
+        display: block;
+        background: #E3151F;
+        border-radius: 80px;
+        text-transform: uppercase;
+        border: none;
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 100%;
+        min-height: 50px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1130px) {
+    .case {
+
+        &__debt-name,
+        &__stage-date {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .case {
+        &__content {
+            display: none;
+            
+        }
+
+        &__item {
+            padding: 16px 0px;
+            &:hover {
+                box-shadow: none;
+                z-index: 1;
+                position: static;
+               
+            }
+            &_active {
+                border: 1px solid red;
+                box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.96);
+                z-index: 1;
+                position: relative;
+            }
+           
+        }
+
+        &__item,
+        &__content {
+            flex-direction: column;
+        }
+
+        &__name {
+            margin-right: 0;
+            padding-left: 30px;
+        }
+
+        &__name,
+        &__content {
+            width: 100%;
+        }
+
+        &__stage,
+        &__debt {
+            width: 100%;
+            margin-right: 0;
+            padding-left: 20px;
+
+        }
+
+        &__name,
+        &__stage-name {
+            &:after {
+                display: none;
+            }
+        }
+
+        &__debt {
+            margin-bottom: 30px;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &__stage-date,
+        &__debt-name {
+            display: inline;
+        }
+
+        &__more {
+            margin: 0 auto;
+        }
+
+        &__debt-row {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+        &__more {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        &__btn {
+            max-width: 252px;
+        }
+    }
+}
+
+
+.case__item_active {
+  
+    .case__content {
+        display: block;
+    }
+
+    .case__name {
+        margin-bottom: 40px;
+
+        &:after {
+            display: block;
+            width: 100%;
+            height: 1px;
+            bottom: -15px;
+            left: 0;
+            top: auto;
+            transform: none;
+        }
+    }
+
+    .case__stage {
+        margin-bottom: 55px;
+
+        &:after {
+            display: block;
+            width: 100%;
+            height: 1px;
+            bottom: -33px;
+            left: 0;
+            top: auto;
+            transform: none;
+
+        }
+    }
+
+   
+}
