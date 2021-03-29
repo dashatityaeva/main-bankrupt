@@ -3011,10 +3011,6 @@ p, h1, h2, h3, h4, ul, figure, ol {
   }
   .case__item_active {
     border: 1px solid red;
-    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.96);
-            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.96);
-    z-index: 1;
-    position: relative;
   }
   .case__item, .case__content {
     -webkit-box-orient: vertical;
