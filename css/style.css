@@ -3415,6 +3415,7 @@ p, h1, h2, h3, h4, ul, figure, ol {
   position: relative;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  cursor: pointer;
 }
 
 .popup-close:before,
