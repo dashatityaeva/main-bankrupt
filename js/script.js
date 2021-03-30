@@ -39,3 +39,52 @@ $(document).ready(function () {
 });
 
 //=========== результаты работы=============
+
+//=========== Контакты=============
+
+$(document).ready(function () {
+
+    let city = $('.contacts__city');
+    let popup = $('.popup-wrap');
+    let popupClose = $('.popup-close');
+    
+    let clearPopup = function () {
+        $('body').css({'overflow' : 'visible'});
+        popup.removeClass('popup-visibled');
+    }
+
+    city.click(function() {
+        city.removeClass('contacts__city_check');
+        $(this).addClass('contacts__city_check');
+
+        let nameOfCity = $(this).text();
+
+        $('.popup-city').text(nameOfCity);
+        $('body').css({'overflow' : 'hidden'});
+        popup.addClass('popup-visibled');
+
+        if (popup) {
+            popupClose.click(function() {
+                clearPopup();
+            });
+
+            $(window).click(function(e) {
+                if (e.target == popup[0]) {
+                    clearPopup();
+                }
+            });
+
+            $(document).keyup(function(e) {
+                if (e.key === "Escape" || e.keyCode === 27) {
+                    clearPopup();
+                }
+            });
+
+        } 
+    })
+   
+        
+   
+});
+
+//=========== Контакты=============
