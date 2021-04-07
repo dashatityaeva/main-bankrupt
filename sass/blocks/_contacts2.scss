@@ -1,0 +1,349 @@
+.contacts {
+    padding-bottom: 110px;
+
+    &__title {
+        background-color: #FFFFFF;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 1.33;
+        text-transform: uppercase;
+        color: #131313;
+        padding: 90px 0;
+    }
+
+    &__subtitle {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 1.07;
+        color: #232323;
+        text-align: center;
+        margin-top: 90px;
+
+        &_accent {
+            color: #E3151F;
+        }
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #EBEBEB;
+        min-height: 66px;
+
+        &:first-child {
+            border-top: 1px solid #EBEBEB;
+        }
+
+        &:last-child {
+            .contacts__col {
+                &:last-child {
+                    max-width: 66.6666%;
+                    flex-basis: 66.6666%;
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    &__col {
+        max-width: 33.3333%;
+        flex-basis: 33.3333%;
+        // padding-left: 60px;
+        padding-right: 10px;
+        padding-left: 5%;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+        &:first-child {
+            font-family: 'Gotham Pro Bold', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #000000;
+            padding-left: 30px;
+        }
+
+        &:not(:nth-child(3)) {
+            border-right: 1px solid #EBEBEB;
+        }
+    }
+
+    &__phone {
+        margin-right: 10px;
+    }
+
+    &__phone,
+    &__mail,
+    &__address {
+        color: #000000;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #000000;
+    }
+
+    &__phone-info {
+        font-size: 10px;
+        line-height: 2.4;
+        color: #BAB7B9;
+    }
+
+    &__address {
+        font-style: normal;
+        padding: 10px 0;
+    }
+
+    &__footnote {
+        font-size: 12px;
+        line-height: 2;
+        color: #767676;
+    }
+
+
+
+
+
+
+    &__info {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 1.07;
+        text-align: center;
+        color: #232323;
+
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        &_accent {
+            color: #E3151F;
+        }
+    }
+}
+
+.questiones {
+    &__list {
+        font-family: 'Gotham Pro Light', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 1.53;
+        color: #232323;
+        counter-reset: num;
+        margin: 15px 0;
+
+    }
+
+    &__point {
+        &:before {
+            content: counter(num) '. ';
+            counter-increment: num;
+            color: 232323;
+
+        }
+    }
+
+    &__link {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #E3151F;
+    }
+
+    &__bnt-requisition {
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        background-color: #E3151F;
+        border-radius: 80px;
+        display: block;
+        max-width: 238px;
+        padding: 14px 0;
+        margin: 20px auto 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f11621;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.16);
+            ;
+        }
+    }
+}
+
+.pattern {
+    padding-bottom: 150px;
+    &__title {
+        background-color: #FFFFFF;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 1.33;
+        text-transform: uppercase;
+        color: #131313;
+        padding: 90px 0;
+    }
+
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        min-width: 50%;
+        flex-basis: 50%;
+        padding-right: 30px;
+    }
+
+    &__download {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        position: relative;
+        padding-left: 44px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #232323;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 26px;
+            background-image: url(../img/img-pdf.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+        }
+
+        &:hover {
+            color: #E3151F
+        }
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.pdt-0 {
+    padding-top: 0;
+}
+
+
+@media (max-width: 768px) {
+    .contacts {
+        &__row {
+            flex-direction: column;
+            padding: 50px 0;
+        }
+
+        &__col {
+            max-width: 100%;
+            flex-basis: 100%;
+            padding: 0 10px;
+            text-align: center;
+
+            &:first-child {
+                padding: 0 10px;
+            }
+        }
+
+        .contacts__col:not(:nth-child(3)) {
+            border-right: none;
+        }
+
+        .contacts__col:not(:last-child) {
+            border-bottom: 1px solid #EBEBEB;
+        }
+    }
+
+    .contacts__row:last-child .contacts__col:last-child {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .pattern {
+        &__col {
+            min-width: 100%;
+            flex-basis: 100%;
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .contacts {
+        padding-bottom: 60px;
+        &__title {
+            padding: 40px 0;
+            font-size: 17px;
+            line-height: 1.36;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 1.07;
+            margin-top: 50px;
+        }
+    }
+    .questiones {
+        padding-bottom: 60px;
+        &__title {
+            padding: 40px 0;
+            font-size: 17px;
+            line-height: 1.36;
+        }
+    }
+
+    .pattern {
+        padding-bottom: 60px;
+        &__title {
+            padding: 40px 0;
+            font-size: 17px;
+            line-height: 1.36;
+        }
+    }
+
+    .questiones__list {
+        font-size: 14px;
+        line-height: 1.71;
+        padding-bottom: 5px;
+    }
+}
