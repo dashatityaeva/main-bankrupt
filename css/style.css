@@ -1832,6 +1832,10 @@ p, h1, h2, h3, h4, ul, figure, ol {
 
 .questiones__text-wrap {
   padding: 40px;
+  position: relative;
+  top: -200px;
+  top: 0;
+  opacity: 1;
 }
 
 .questiones__text {
@@ -1939,6 +1943,37 @@ p, h1, h2, h3, h4, ul, figure, ol {
   line-height: 1.43;
   padding: 20px 60px;
   text-align: center;
+}
+
+.questiones__item[open] .questiones__text-wrap {
+  -webkit-animation: moving 2s;
+          animation: moving 2s;
+}
+
+@-webkit-keyframes moving {
+  0% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {

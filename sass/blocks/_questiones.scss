@@ -21,7 +21,6 @@
         padding-bottom: 10px;
     }
 
-
     &__name {
         max-width: 1114px;
         min-height: 70px;
@@ -58,6 +57,11 @@
 
     &__text-wrap {
         padding: 40px;
+        position: relative;
+        top: -200px;
+        top: 0;
+        opacity: 1;
+        // animation: move 1s linear alternate ;
     }
 
     &__text {
@@ -163,6 +167,24 @@
         text-align: center;
     }
 
+}
+
+.questiones__item[open] .questiones__text-wrap {
+    // height: 100%;
+    // background-color: olivedrab;
+    // transition: 2s;
+    animation: moving 2s;
+}
+
+@keyframes moving {
+    0% {
+      transform: translateY(-15%);
+      opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
